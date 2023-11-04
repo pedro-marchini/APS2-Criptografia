@@ -1,13 +1,13 @@
 import os
 
 # str alfabeto com as letras e acentuações
-alfabeto: str = "aáàãâbcçdeéèêfghiíìîjklmnoóòõôpqrstuúùûvwxyzAÁÀÃÂBCDEÉÈÊFGHIÍÌÎJKLMNOÓÒÕÔPQRSTUÚÙÛVWXYZ"
+alfabeto: str = "aáàãâbcçdeéèêfghiíìîjklmnoóòõôpqrstuúùûvwxyzAÁÀÃÂBCDEÉÈÊFGHIÍÌÎJKLMNOÓÒÕÔPQRSTUÚÙÛVWXYZ0123456789!@#$%¨&*()_-=+,.;:\/][~^`´}{"
 
 # Define uma variável para armazenar a opção escolhida pelo usuário
 tipoConversao = None
 
 # laço para repetir o menu, fazendo com que o usuário saia digitando 3.
-while tipoConversao != "":
+while tipoConversao != "0":
     # Limpa a tela
     os.system("cls")
 
@@ -27,7 +27,7 @@ while tipoConversao != "":
         # Espera o usuário pressionar Enter
         input('Digite "enter" para encerrar...')
         # Encerra o fluxo
-        break
+        continue
     # Verifica se a opção escolhida é 1 ou 2, caso seja diferente, volta para o começo do while.
     elif tipoConversao != "1" and tipoConversao != "2":
         # Limpa a tela
